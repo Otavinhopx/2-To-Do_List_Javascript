@@ -15,7 +15,7 @@ if (localStorage.data) {
 
 searchBar.addEventListener("input", () => {
     const searchText = searchBar.value.toLowerCase();
-    const tasks = document.querySelectorAll(".task_item"); // Seleciona as tarefas dinamicamente
+    const tasks = document.querySelectorAll(".task_item");
 
     tasks.forEach((task) => {
         const taskText = task.querySelector(".task_text").textContent.toLowerCase();
