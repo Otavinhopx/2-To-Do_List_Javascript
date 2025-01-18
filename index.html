@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="back_modal" id="modal"></div>
+    <div class="task_card">
+        <h1 class="card_title">To-do list</h1>
+        <div>
+            <input type="text" id="searchBar" placeholder="Pesquisar tarefas...">
+        </div>
+        <div class="task_area" id="taskArea">
+        </div>
+        <button class="waves-effect waves-light btn" id="addTask" onclick="showTaskWindow()"><i class="material-icons left">+</i>add</button>
+    </div>
+    <div class="new_task_window" id="newTaskWindow">
+        <div class="new_task_form_window">
+            <input type="textbox" class="new_task_form" placeholder="Digite sua tarefa" id="form" maxlength="40">
+        </div>
+        <div class="new_task_buttons">
+            <button class="new_task_cancel new_task_btn" onclick="cancel()">Cancelar</button>
+            <button class="new_task_submit new_task_btn" id="btnAdd" onclick="newTask()">Adicionar</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>

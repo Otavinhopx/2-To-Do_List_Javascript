@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Quicksand:wght@300..700&display=swap');
+
+.hidden{
+    display: none;
+}
+.body{
+    height: 957px;
+    background-image: linear-gradient(150deg,#fec1c1,#9a70c9);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Dosis", serif;
+}
+
+.back_modal{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.409);
+    z-index: 9;
+}
+
+.task_card{
+    margin-top: 50px;
+    background-color: white;
+    width: 35em;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    border-radius: 20px;
+    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.182);
+}
+
+.card_title{
+    margin-top: 5%;
+    text-decoration:underline;
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+}
+
+.btn{
+    margin-bottom: 20px;
+    width: 150px;
+    background-color: #fbbb74;
+}
+
+.task_area{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 800px;
+    gap: 15px;
+    overflow:auto;
+}
+
+.task_content{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task_text{
+    font-size: 20px;
+    color: gray;
+    align-self: start;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task_cancel_icon{
+    align-self:flex-end;
+    color:red ;
+    width: 20px;
+    height: 20px;
+}
+
+#checkbox:checked ~ .task_text{
+    text-decoration: line-through;
+    color: rgb(67, 67, 67);
+}
+
+.cancel_btn{
+    width: 20px;
+    height: 20px;
+    color: red;
+    background-color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Dosis", serif;
+}
+
+.cancel_btn:enabled{
+    background-color: white;
+}
+
+.task_content{
+    display:flex;
+}
+
+.new_task_window{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+    position: absolute;
+    margin-top: 20%;
+    z-index: 10;
+}
+
+.new_task_form_window{
+    background-color: white;
+    width: 600px;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.182);
+}
+
+.new_task_form{
+    width: 500px;
+    font-family: "Dosis", serif;
+    border-radius: 8px;
+    border: solid gray 1px;
+}
+
+.new_task_buttons{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.new_task_btn{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.182);
+    
+}
+
+
+
+.new_task_cancel{
+    background-color: red;
+}
+
+.new_task_submit{
+    background-color: #26a69a;
+}
+
+.new_task_cancel:enabled{
+    background-color: red;
+}
+
+.new_task_submit:enabled{
+    background-color: #26a69a;
+}
+
+.new_task_submit:hover{
+    background-color: #1b736a;
+}
+
+.new_task_cancel:hover{
+    background-color: rgb(150, 1, 1);
+}
